@@ -30,7 +30,8 @@ spec:
             cpu: 10m
             memory: 10Mi
         ports:
-        - containerPort: 80
+        - name: nginx
+          containerPort: 80
         lifecycle:
           postStart:
             exec:
