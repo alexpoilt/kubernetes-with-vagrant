@@ -5,15 +5,4 @@
   roles:
     - common
     - docker
-    - kubectl
-
-# - name: Configure Worker
-#   hosts: worker
-#   become: true
-#   become_method: sudo
-#   roles: 
-#     - docker
-#     - common
-#     - kubectl
-
-
+    - kubernetes
