@@ -31,6 +31,12 @@ spec:
       - name: metrics-server
         image: k8s.gcr.io/metrics-server-amd64:v0.3.3
         imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: 50Mi
+          requests:
+            cpu: 50m
+            memory: 100Mi
         args: 
           - /metrics-server
           - --kubelet-insecure-tls
