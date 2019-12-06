@@ -12,7 +12,7 @@
 
 - name: Install Required Packages
   apt: 
-   name: ['kubeadm', 'kubectl', 'kubelet', 'kubernetes-cni' ]
+   name: ['kubeadm=1.16.0-00', 'kubectl=1.16.0-00', 'kubelet=1.16.0-00', 'kubernetes-cni' ]
    state: present
 
 - name: Remove Swapfile from /etc/fstab
